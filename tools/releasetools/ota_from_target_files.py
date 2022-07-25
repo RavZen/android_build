@@ -1102,7 +1102,7 @@ def GenerateAbOtaPackage(target_file, output_file, source_file=None):
     target_info.info_dict['ab_partitions'] = zfp.read(
         AB_PARTITIONS).decode().strip().split("\n")
 
-  CheckVintfIfTrebleEnabled(target_file, target_info)
+  #CheckVintfIfTrebleEnabled(target_file, target_info)
 
   # Metadata to comply with Android OTA package format.
   metadata = GetPackageMetadata(target_info, source_info)
